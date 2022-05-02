@@ -56,3 +56,6 @@
     ],
     "version": "2.0.0"
 } -->
+
+## Procedure to build and run C++ Problem
+### 1. From Terminal Click Run task and select mingw64 g++.exe compliler. 2. From top right arrow run C/C++ File
