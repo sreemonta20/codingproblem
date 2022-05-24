@@ -1,3 +1,4 @@
+/* Sort a given array in ascending and descending */
 #include<iostream>
 using namespace std;
 void sortasc(int arr[], int size){
