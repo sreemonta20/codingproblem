@@ -5,54 +5,9 @@ using namespace std;
 int main()
 {
 
-    // int arr[6] = {0, 0, 1, 0, 1, 1}, track_last_value = 0, max_consec_count =0, counter =0;
-
-    // for(int i =0; i < 6; i++){
-
-    //     //test 1
-    //     // if(arr[i] == 1 && (track_last_value == 1)){
-    //     //     if((arr[i+1] == 0) && i <6){
-    //     //         counter++;
-    //     //         max_consec_count = counter;
-
-    //     //     }else{
-    //     //         counter++;
-    //     //     }
-    //     //     //counter++;
-
-    //     // }else if((arr[i] == 1) &&(track_last_value == 0)){
-    //     //     counter++;
-    //     // }else if((arr[i] == 0) && (track_last_value == 1)){
-
-    //     //     max_consec_count = counter;
-    //     //     counter = 0;
-    //     // }
-    //     // track_last_value = arr[i];
-
-    //     //test 2
-    //     // if(i-1 >=0  && i+1 < 6){
-    //     //     if((arr[i] == 0) && (track_last_value == 0)){
-    //     //         continue;
-    //     //     }else if((arr[i] == 0) && (track_last_value == 1)){
-    //     //         if(counter > max_consec_count){
-    //     //             max_consec_count = counter;
-    //     //             counter = 0;
-    //     //         }
-    //     //     }else if((arr[i] == 1) && (track_last_value == 0 || track_last_value == 1)){
-    //     //         counter +=1;
-    //     //     }else if((arr[i] == 1) && (6-1 == i)){
-    //     //         if(counter > max_consec_count){
-    //     //             max_consec_count = counter;
-    //     //         }
-    //     //     }else if((arr[i] == 0) && (6-1 == i)){
-    //     //         if(counter > max_consec_count){
-    //     //             max_consec_count = counter;
-    //     //         }
-    //     //     }
-    //     // }
-    //     // track_last_value = arr[i];
-
-    // }
+    // Test Case 1 :: Input: arr[7] = {0, 1, 0, 0, 1, 1, 0}, Output: 2;
+    // Test Case 2 :: Input: arr[10] = {0, 1, 0, 1, 1, 1, 0, 1, 1, 0}, Output: 3;
+    // Test Case 3 :: Input: arr[4] = {0, 0, 0, 0}, Output: 0;
     int arr[7] = {0, 1, 0, 0, 1, 1, 0}, max_consecutive_count = 0, oneCount = 0, size = 0;
     cout << "Enter the size of an Array :"
          << "\n";
