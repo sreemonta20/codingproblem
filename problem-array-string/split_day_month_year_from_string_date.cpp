@@ -11,12 +11,12 @@ int main(){
     }
 
     for(int i=0; i <size; i++){
-        if((ctoi(date[i])) && (date[i+2] == "/")){
-            day = ctoi(date[i]+date[i+1]);
+        if((stoi(date[i])) && (date[i+2] == "/")){
+            day = stoi(date[i]+date[i+1]);
         }else if((date[i-1] == "/") && date[i+1] == "/"){
-            month = ctoi(date[i]);
+            month = stoi(date[i]);
         }else if(date[i+1] == '\0'){
-            year = ctoi(date[i-3]+date[i-2]+date[i-1]+date[i]);
+            year = stoi(date[i-3]+date[i-2]+date[i-1]+date[i]);
         }
     }
 
