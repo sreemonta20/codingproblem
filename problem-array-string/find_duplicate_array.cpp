@@ -73,13 +73,18 @@ vector<int> duplicates(int arr[], int n)
 
 int main()
 {
-    // Sample input 1
-    //int arr[4] = {0, 3, 1, 2};
+    // test case 1    
+    // input: int arr[4] = {0, 3, 1, 2};
+    // output: -1
 
-    // Sample output 2
-    //int arr[5] = {2, 3, 1, 2, 3};
+    // test case 2    
+    // input: int arr[5] = {2, 3, 1, 2, 3};
+    // output: 2, 3
 
-    // Sample output 3
+    // test case 3
+    // input: int arr[9] = {1, 3, 11, 13, 14, 20, 22, 25, 25};
+    // output: 25
+
     int arr[9] = {1, 3, 11, 13, 14, 20, 22, 25, 25};
 
     vector<int> ans = duplicates(arr, 9);
