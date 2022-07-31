@@ -4,18 +4,17 @@
 
 // Example 2: Input: nums = [3,2,4], target = 6  Output: [1,2]
 
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
+public:vector<int> twoSum(int nums[], int n, int target) {
         
         int sum = 0; vector<int> result;
         
-        for(int i=0; i< nums.size(); i++){
+        for(int i=0; i< n; i++){
             
-            for(int j=i+1; j<nums.size(); j++){
+            for(int j=i+1; j<n; j++){
                 sum = nums[i] + nums[j];
                 if(sum == target){
                     result.push_back(i);
@@ -37,7 +36,27 @@ public:
 
 int main(){
 
-    //// input
-
-    return 0;
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        long long s;
+        cin>>n>>s;
+        int arr[n];
+        const int mx = 1e9;
+        for(int i=0;i<n;i++)
+        {
+            cin>>arr[i];
+        }
+        Solution ob;
+        vector<int>res;
+        res = ob.twoSum(arr, n, s);
+        
+        for(int i = 0;i<res.size();i++)
+            cout<<res[i]<<" ";
+        cout<<endl;
+        
+    }
+	return 0;
 }
